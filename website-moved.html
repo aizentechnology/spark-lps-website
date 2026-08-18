@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spark Website Address Changed</title>
+<style>
+  :root {
+    --blue: #3195EB;
+    --blue-dark: #1d6fb8;
+    --blue-tint: #eaf4ff;
+    --orange: #f5a623;
+    --orange-dark: #d98407;
+    --navy: #17417a;
+    --text: #263447;
+    --muted: #64748b;
+    --bg: #f4f7fa;
+    --border: #e2e8f0;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    background: var(--bg); /* 60% - dominant neutral */
+    color: var(--text);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .top-accent {
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, var(--orange), var(--blue) 60%, var(--navy) 100%);
+  }
+
+  header {
+    width: 100%;
+    max-width: 1100px;
+    padding: 32px 24px 8px;
+    display: flex;
+    justify-content: center;
+  }
+
+  header img { height: 56px; }
+
+  main {
+    width: 100%;
+    max-width: 760px;
+    padding: 24px 24px 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--blue-tint);
+    color: var(--blue-dark);
+    border: 1px solid #cfe6fb;
+    padding: 8px 18px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+
+  .badge::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--orange); /* 10% accent used sparingly */
+  }
+
+  h1 {
+    font-size: 36px;
+    color: var(--navy);
+    font-weight: 800;
+    margin-bottom: 14px;
+  }
+
+  .subtitle {
+    font-size: 17px;
+    color: var(--muted);
+    font-weight: 500;
+    max-width: 520px;
+    margin-bottom: 32px;
+  }
+
+  .cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--orange); /* 10% accent - primary action */
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 17px;
+    padding: 16px 32px;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 0 8px 20px rgba(245, 166, 35, 0.35);
+    transition: background 0.15s ease, transform 0.15s ease;
+    margin-bottom: 28px;
+  }
+
+  .cta:hover {
+    background: var(--orange-dark);
+    transform: translateY(-1px);
+  }
+
+  .cta svg { width: 20px; height: 20px; flex-shrink: 0; }
+
+  .redirect-note {
+    font-size: 15px;
+    color: var(--muted);
+    margin-bottom: 40px;
+  }
+
+  .redirect-note b { color: var(--text); }
+
+  .assure-card {
+    width: 100%;
+    background: var(--navy); /* 30% - secondary structural color */
+    color: #ffffff;
+    border-radius: 16px;
+    padding: 32px 36px;
+    text-align: left;
+    margin-bottom: 24px;
+  }
+
+  .assure-card h2 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 18px;
+    color: #ffffff;
+  }
+
+  .assure-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .assure-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 15px;
+    color: #dbe8fb;
+  }
+
+  .assure-list svg {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    margin-top: 2px;
+    color: var(--orange);
+  }
+
+  .bookmark-strip {
+    width: 100%;
+    background: var(--blue-tint);
+    border: 1px solid #cfe6fb;
+    border-radius: 12px;
+    padding: 16px 22px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14.5px;
+    color: var(--blue-dark);
+    margin-bottom: 40px;
+  }
+
+  .bookmark-strip svg {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    color: var(--blue);
+  }
+
+  footer {
+    font-size: 14px;
+    color: var(--muted);
+  }
+
+  footer .team {
+    font-weight: 700;
+    color: var(--navy);
+    margin-top: 4px;
+  }
+
+  @media (max-width: 600px) {
+    h1 { font-size: 28px; }
+    .assure-card { padding: 24px 22px; }
+  }
+</style>
+</head>
+<body>
+  <div class="top-accent"></div>
+
+  <header>
+    <img src="images/Sprak-Logo.png" alt="Spark Learning &amp; Performance Solutions">
+  </header>
+
+  <main>
+    <span class="badge">Temporary Website Transition Notice</span>
+
+    <h1>Spark Website Address Changed</h1>
+    <p class="subtitle">Spark Student Login has moved to our new website.</p>
+
+    <a class="cta" href="https://www.sparklps.in" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 0 20 15.3 15.3 0 0 1 0-20z"/></svg>
+      Please use: www.sparklps.in
+    </a>
+
+    <p class="redirect-note">
+      Student Login is no longer being provided through <b>www.sparklearning.in</b>.<br>
+      We apologise for any inconvenience caused during this transition.
+    </p>
+
+    <div class="assure-card">
+      <h2>Please be assured:</h2>
+      <ul class="assure-list">
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Your Spark account remains unchanged.
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Your learning progress remains unchanged.
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Our services and support remain unchanged.
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Only the website address has changed.
+        </li>
+      </ul>
+    </div>
+
+    <div class="bookmark-strip">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 0 20 15.3 15.3 0 0 1 0-20z"/></svg>
+      Please use <b>www.sparklps.in</b> and bookmark this new website for future access.
+    </div>
+
+    <footer>
+      Thank you for your cooperation.
+      <div class="team">Team Spark</div>
+    </footer>
+  </main>
+</body>
+</html>
